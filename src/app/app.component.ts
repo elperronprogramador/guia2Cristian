@@ -10,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'guia2Cristian';
+  
+  avatar= 'https://www.w3schools.com/howto/img_avatar.png'
 }
