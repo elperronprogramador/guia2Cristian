@@ -4,16 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
  </head>
  <body>
     <header class="header">
-      <picture>
+      <picture class="logo">
         <img [src]="avatar" alt="">
       </picture>
-      <input type="text" id="buscador">
+      <h1>{{titulo}}</h1>
+      <input class="buscador" type="text" id="buscado" required placeholder="buscador">
     </header> 
+    <div class="container">
+        <aside class="aside1">
+          <nav class="nav">
+            <h2 class="title-nav">
+              MENU
+            </h2>
+            <ul>
+              <li><a [href]="link1" target="_blank" class="link"> Youtube</a></li>
+              <li><a [href]="link2" target="_blank" class="link">Susuki</a></li>
+              <li><a [href]="link3" class="link" target="_blank">Color hunt</a></li>
+            </ul>
+            <input
+            type="submit"
+            value="Enviar"
+          />
     
-    <main></main>
+          </nav>
+        </aside>
+        <section class="content">
+          <table class="tabla">
+            <thead class="encabezado">
+              <tr>
+                <th>Productos</th>
+                <th>Existencias</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fila-impar">
+                <td>{{inventario.nombrep1}}</td>
+                <td>{{inventario.cantidad1}}</td>
+                <td>{{inventario.precio1}}</td>
+              </tr>
+              <tr class="fila-par">
+                <td>{{inventario.nombrep2}}</td>
+                <td>{{inventario.cantidad2}}</td>
+                <td>{{inventario.precio2}}</td>
+              </tr>
+              <tr class="fila-impar">
+                <td>{{inventario.nombrep3}}</td>
+                <td>{{inventario.cantidad3}}</td>
+                <td>{{inventario.precio3}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <video [src]="video"></video>
+        </section>
+    </div>
+  <footer class="footer">
+    
+    <div class="footerx">
+      <h1>1</h1>
+    </div>
+    <div class="footerx">
+      <h1>2</h1>
+    </div>
+    <div class="footerx">
+      <h1>3</h1>
+    </div>
+  </footer>
 
  </body>
  </html>
